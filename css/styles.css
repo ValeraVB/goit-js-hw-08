@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 24px 0 0 0;
+  list-style: none;
+}
+
+.gallery-item {
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover; /* Зображення буде збігатися з розмірами контейнера, зберігаючи пропорції та обрізаючи зайві частини */
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
