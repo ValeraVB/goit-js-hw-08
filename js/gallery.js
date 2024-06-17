@@ -84,7 +84,6 @@ const galleryItems = images
   )
   .join("");
 
-// Додаємо згенерований HTML до контейнера галереї
 galleryContainer.innerHTML = galleryItems;
 
 // Додаємо прослуховування кліків на контейнер галереї
@@ -92,7 +91,7 @@ galleryContainer.addEventListener("click", (event) => {
   event.preventDefault(); // Забороняємо дійшов до посилання
   if (event.target.classList.contains("gallery-image")) {
     const largeImageUrl = event.target.dataset.source;
-    // Відкриття модального вікна з великим зображенням
+
     const instance = basicLightbox.create(`<img src="${largeImageUrl}">`);
     instance.show();
   }

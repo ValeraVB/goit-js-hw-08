@@ -26,8 +26,7 @@ body {
 .gallery-image {
   width: 360px;
   height: 200px;
-  object-fit: cover; /* Зображення буде збігатися з розмірами контейнера, зберігаючи пропорції та обрізаючи зайві частини */
-}
+  object-fit: cover; 
 
 .gallery-image:hover {
   transform: scale(1.05);
